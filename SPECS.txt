@@ -1,0 +1,3 @@
+car_img : 1900x950
+
+built_img : 700x550

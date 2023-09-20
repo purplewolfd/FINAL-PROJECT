@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+@keyframes fluid{
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+.bg-1{
+    background: linear-gradient(300deg, #071952,#444,#071952);
+    animation : fluid 5s infinite;
+    background-size: 180% 180%;
+}
+
+.bg-2{
+    background-color: #121212;
+}
+
+.border-custom{
+    border: 1px solid white;
+    box-shadow: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.border-custom:hover{
+    border: 5px solid #865DFF;
+    box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 25px #865DFF,
+    0 0 80px #865DFF,
+    0 0 9px #865DFF,
+    0 0 10px #865DFF,
+    0 0 15px #865DFF;
+    transition: all 0.5s ease-in-out;
+}
+
+/*NAVBAR*/
+
+.navbar{
+    --bs-navbar-nav-link-padding-x:1.5rem !important;
+}
+
+.btn{
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+/*SERVICE*/
+
+.icon{
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.icon:hover{
+    background-color: var(--bs-blue);
+}
+
+/*.service{
+    border: 1px solid white;
+    box-shadow: 0px;
+    
+}
+
+.service:hover{
+    
+    border: 5px solid #865DFF;
+    box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 25px #865DFF,
+    0 0 80px #865DFF,
+    0 0 9px #865DFF,
+    0 0 10px #865DFF,
+    0 0 15px #865DFF;
+    transition: all 0.5s ease-in-out;
+}*/
+
+/*.service:hover .icon{
+    background-color: var(--bs-blue);
+}*/
+
+.swiper-pagination-bullet{
+    background-color: white;
+}
+
+.project{
+    overflow: hidden;
+    position: relative;
+}
+
+.project .overlay .h5{
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.project:hover .overlay .h5{
+    color: #121212;
+    background-color: #865DFF;
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+.review img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.team-member .divider{
+    background-color: #444;
+    height: 1px;
+}
+
+.team-member .links .icon{
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#contact .form-control{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.scroll-to-top{
+    text-decoration: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
