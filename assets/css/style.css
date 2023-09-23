@@ -20,7 +20,7 @@
 
 .bg-1{
     background: linear-gradient(300deg, #071952,#444,#071952);
-    animation : fluid 5s infinite;
+    animation : fluid 3.5s infinite;
     background-size: 180% 180%;
 }
 
@@ -31,7 +31,7 @@
 .border-custom{
     border: 1px solid white;
     box-shadow: 0px;
-    transition: all 0.5s ease-in-out;
+    transition : all 0.3s ease-in-out !important;
 }
 
 .border-custom:hover{
@@ -41,11 +41,11 @@
     0 0 10px #fff,
     0 0 21px #fff,
     0 0 25px #865DFF,
-    0 0 80px #865DFF,
+    0 0 50px #865DFF,
     0 0 9px #865DFF,
     0 0 10px #865DFF,
     0 0 15px #865DFF;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
 }
 
 /*NAVBAR*/
@@ -84,7 +84,6 @@
 }
 
 .service:hover{
-    
     border: 5px solid #865DFF;
     box-shadow:
     0 0 5px #fff,
@@ -129,9 +128,19 @@
 }
 
 .review img{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #865DFF;
+    border-radius: 5%;
+    opacity: 85%;
+    transition: 0.3s;
+    padding: 2%;    
+}
+
+.review:hover img{
+    opacity: 100%;
+    width: 220px;
+    height: 220px;
 }
 
 .team-member .divider{
